@@ -1,0 +1,22 @@
+{
+  "name": "h2u",
+  "version": "0.0.0",
+  "description": "http2 server with unbundle",
+  "license": "MIT",
+  "engines": {
+    "node": "7.9.x",
+    "npm": "4.2.x"
+  },
+  "scripts": {
+    "build": "unbundle -i src/app.js -o public && cp index.html public",
+    "start": "node index"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "express": "^4.15.2",
+    "unbundle": "^7.0.8"
+  }
+}
